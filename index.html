@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   
     <style>
         .m {
             background-image: url(images/header-bg.png);
@@ -24,7 +27,7 @@
         .main {
             background-image: url(images/banner-slide/Banner-1.jpg);
             background-repeat: no-repeat;
-            height: 90vh;
+            height: auto;
             overflow: hidden;
             width: auto;
         }
@@ -79,6 +82,37 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .product{
+            max-height: 300px;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+        .product {
+    transition: border-radius 0.3s ease, border 0.3s ease, transform 0.3s ease;
+        }
+
+        .product:hover {
+            cursor: pointer;
+            border-radius: 20px;
+            border: 10px solid green;
+            transform: scale(1.05); /* This will slightly enlarge the product on hover */
+        }
+        .footer{
+           
+            background-color: rgb(4, 58, 4);
+            height: auto;
+        }
+        .bg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1em 3em ;
+            margin-bottom: 0em;
+            padding-top: 5em;
+        }
+        
+      
+       
 
     </style>
 </head>
@@ -109,11 +143,13 @@
     <div class="container-fluid main">
         <div class="row mx-5 my-3 read">
             <h1 class="organic">100% ORGANIC</h1>
+            
+            
             <h1 class="fs-1 bg-success text-light para">Fresh & Natural Farm Food</h1>
             <p class="fs-5">The readable content of a page when looking at its</p>
             <br>
             <p class="fs-5">layout point of using letters, as opposed.</p>
-            <button class="btn btn-success btn-custom">ALL PRODUCTS</button>
+            <button class="btn btn-success btn-custom pro">ALL PRODUCTS</button>
         </div>
     </div>
     <div class="container mt-2">
@@ -160,6 +196,104 @@
                 
 
     </div>
+    <div class="container-fluid mt-4 py-5">
+        <div class="row d-flex justify-content-between m-1 height-auto">
+            <div class="col-md-3  text-center p-1 fruit">
+                <img src="images/gallery/g-8.jpg" class="img-fluid product" alt="">
+                <div class="d-flex justify-content-between align-items-center p-4 mx-5">
+                    <h1 class="organic fs-2 py-2 text-start">Lemons</h1>
+                    <h3 class="fs-3 text-success">$6.20</h3>
+                </div>
+            </div>
+            <div class="col-md-3 text-center p-1   fruit">
+                <img src="images/gallery/g-7.jpg" class="img-fluid product" alt="">
+                <div class="d-flex justify-content-between align-items-center p-4 mx-5">
+                    <h1 class="organic fs-2 py-2 text-start">Oranges</h1>
+                    <h3 class="fs-3 text-success">$4.20</h3>
+                </div>
+            </div>
+            <div class="col-md-3 text-center p-1   fruit">
+                <img src="images/gallery/g-6.jpg" class="img-fluid product" alt="">
+                <div class="d-flex justify-content-between align-items-center p-4 mx-5">
+                    <h1 class="organic fs-2 py-2 text-start">Mangoes</h1>
+                    <h3 class="fs-3 text-success">$5.03</h3>
+                </div>
+            </div>
+            <div class="col-md-3 text-center p-1   fruit">
+                <img src="images/gallery/g-8.jpg" class="img-fluid product" alt="">
+                <div class="d-flex justify-content-between align-items-center p-4 mx-5">
+                    <h1 class="organic fs-2 py-2 text-start">Salad</h1>
+                    <h3 class="fs-3 text-success">$3.76</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+      <div class="row bg">
+        <div class="col-md-3 mt-2">
+            <h1 class="fs-2 text-start text-light">Tazza</h1>
+            <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            <div class="d-flex gap-2">
+            <i class="fa-solid fa-home text-light text-start mt-1"></i> 
+            <p class="text-light">Cape Town,Paris</p>
+        </div>
+        <div class="d-flex gap-2">
+            <i class="fa fa-phone text-light mt-1" aria-hidden="true"></i>
+            <p class="text-light">81XXX XXXXX</p>
+        </div>
+        <div class="d-flex gap-2">
+            <i class="fa fa-envelope text-light mt-1" aria-hidden="true"></i>
+            <p class="text-light">info.tazza@gmail.com</p>
+        </div>
+            
+
+        </div>
+        <div class="col-md-3 mt-2">
+            <h1 class="fs-2 text-start text-light">Social Links</h1>
+            <p class="text-light">Follow on social media to stay updated. </p>
+            <div class="d-flex gap-2">
+                <i class="fa-brands fa-instagram text-light mt-1"></i>
+                <p class="text-light">Instagram</p>
+            </div>
+            <div class="d-flex gap-2">
+                <i class="fa-brands fa-twitter text-light mt-1"></i>
+                <p class="text-light">Twitter</p>
+            </div>
+            <div class="d-flex gap-2">
+                <i class="fa-brands fa-facebook text-light mt-1"></i>
+                <p class="text-light">Facebook</p>
+            </div>
+
+        </div>
+        <div class="col-md-3 mt-2">
+            <h1 class="fs-2 text-start text-light">Custmer Support</h1>
+            <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                <p class="text-light">About Us</p>
+                
+                <p class="text-light">Terms & Conditions</p>
+                <p class="text-light">Product Returns</p>
+            
+
+        </div>
+        <div class="col-md-3 mt-2">
+            <h1 class="fs-2 text-start text-light">Newsletter</h1>
+           <input type="text" name="" id="" class="form-control" placeholder="Enter Your Email here">
+           <button class="btn btn-success btn-custom pro mt-3">Subscribe</button>
+           
+           <div class="d-flex gap-2 mt-5">
+            <i class="fa-solid fa-handshake-simple text-light mt-1"></i>
+            <p class="text-light">Stay Connected</p>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    
+    </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
 
